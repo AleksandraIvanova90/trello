@@ -1,0 +1,108 @@
+body {
+    cursor: pointer;
+
+}
+.columns {
+    width: 750px;
+    height: auto;
+    background-color: rgb(36, 180, 236);
+    display: flex;
+}
+
+.column {
+    display: block;
+    box-sizing: border-box;
+    width: 250px;
+    height: auto;
+    border: 1px solid aliceblue;
+    margin: 3px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+.colomn-title {
+    width: auto;
+    color: rgb(36, 180, 236);
+    font-family: Roboto, Geneva, Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.colomn-card__text {
+    width: 90%;
+    height: auto;
+    display: block;
+    cursor: text;
+}
+
+.colomn-card {
+    display: flex;
+    color: rgb(36, 180, 236);
+    background-color: white;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.colomn-card.dragged {
+    position: absolute;
+    z-index: 999;
+    pointer-events: none;
+    cursor: grabbing;
+}
+
+.colomn-card:hover .colomn-card__close {
+    display: flex;
+    color: rgb(36, 180, 236);
+    background-color: white;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    
+}
+
+.column-add__card {
+    /* display: block; */
+    width: auto;
+    height: auto;
+    color: rgb(75, 193, 240);
+    white-space: normal;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+
+}
+
+.colomn-card__close {
+    display: none;
+    color: #000000;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.card-new__text {
+    display: flex;
+    color: rgb(36, 180, 236);
+    background-color: white;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.card-new-container {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5px;
+
+}
+.card-new-container__close {
+    margin-right: 5px;
+
+}
+card-new {
+    display: block;
+}
